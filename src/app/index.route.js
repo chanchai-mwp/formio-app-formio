@@ -51,7 +51,7 @@
               $scope.formsLoading = false;
             }
           });
-          $scope.updateResourceSearch = function() {
+          $scope.updateResourceSearch = function() {console.log('updatResourcSearch: ');
             var params = {};
             if ($scope.resourcesSearch.length > 0) {
               var paramName = $scope.resourcesSearchType+'__regex';
@@ -59,7 +59,7 @@
             }
             $scope.resourcesUrlParams = params;
           };
-          $scope.updateFormSearch = function() {
+          $scope.updateFormSearch = function() {console.log('updateFormSearch: ');
             var params = {};
             if ($scope.formsSearch.length > 0) {
               var paramName = $scope.formsSearchType+'__regex';
